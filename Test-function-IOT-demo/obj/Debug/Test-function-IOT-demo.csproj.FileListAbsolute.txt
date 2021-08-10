@@ -1,0 +1,10 @@
+D:\Projects\For BNV IOT\Test-function-IOT-demo\Test-function-IOT-demo\bin\Debug\Test-function-IOT-demo.exe.config
+D:\Projects\For BNV IOT\Test-function-IOT-demo\Test-function-IOT-demo\bin\Debug\Test-function-IOT-demo.exe
+D:\Projects\For BNV IOT\Test-function-IOT-demo\Test-function-IOT-demo\bin\Debug\Test-function-IOT-demo.pdb
+D:\Projects\For BNV IOT\Test-function-IOT-demo\Test-function-IOT-demo\obj\Debug\Test-function-IOT-demo.csproj.CoreCompileInputs.cache
+D:\Projects\For BNV IOT\Test-function-IOT-demo\Test-function-IOT-demo\obj\Debug\Test-function-IOT-demo.exe
+D:\Projects\For BNV IOT\Test-function-IOT-demo\Test-function-IOT-demo\obj\Debug\Test-function-IOT-demo.pdb
+D:\Projects\For BNV IOT\Test-function-IOT-demo\Test-function-IOT-demo\obj\Debug\Test-function-IOT-demo.csproj.AssemblyReference.cache
+D:\Projects\For BNV IOT\Test-function-IOT-demo\Test-function-IOT-demo\bin\Debug\Newtonsoft.Json.dll
+D:\Projects\For BNV IOT\Test-function-IOT-demo\Test-function-IOT-demo\bin\Debug\Newtonsoft.Json.xml
+D:\Projects\For BNV IOT\Test-function-IOT-demo\Test-function-IOT-demo\obj\Debug\Test-function-IOT-demo.csproj.CopyComplete
