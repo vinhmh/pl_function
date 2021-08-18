@@ -11,16 +11,20 @@ namespace Test_function_IOT_demo
 {
     class Program
     {
-        IntPtr h = IntPtr.Zero;
-
         static void Main(string[] args)
         {
+            string str = "protocol=TCP,ipaddress=192.168.1.201,port=4370,timeout=2000,passwd=";
+
+
             //get device
             GetDevice();
 
             // GetRealTimeLog();
             demo abc = new demo("abc");
-            abc.GetRealTimeLog();
+            abc.ConnectToDevice(str);
+            //abc.GetRealTimeLog();
+
+
             Console.Read();
         }
         // get device plug in C3
@@ -37,13 +41,14 @@ namespace Test_function_IOT_demo
 
             ret = SearchDevice(udp, adr, ref buffer[0]);
             Console.WriteLine(ret);
-            if (ret >= 0)
+            if (ret >= 0) 
             {
                 str = Encoding.Default.GetString(buffer);
                 str = str.Replace("\r\n", "\t");
+                Console.WriteLine(str);
                 tmp = str.Split('\t');
 
-                foreach (string sub_tmp in tmp)
+               /* foreach (string sub_tmp in tmp)
                 {
                     k = 0;
                     string[] sub_str = sub_tmp.Split(',');
@@ -54,7 +59,7 @@ namespace Test_function_IOT_demo
                     // IP
                     feild = sub_str[k++].Split('=');
                     demo abc = new demo("abc");
-                    abc.ConnectToDevice(feild[1]);
+
                     // NetMask
                     feild = sub_str[k++].Split('=');
 
@@ -69,7 +74,7 @@ namespace Test_function_IOT_demo
 
                     // Ver
                     feild = sub_str[k++].Split('=');
-                }
+                }*/
             }
         }
 
@@ -92,9 +97,10 @@ namespace Test_function_IOT_demo
             {
                 abc = ABC;
             }
-            public void ConnectToDevice(string ip)
+            public void ConnectToDevice( string str)
             {
-                string str = "protocol=TCP,ipaddress="+ip+",port=4370,timeout=2000,passwd=";
+                IntPtr h = IntPtr.Zero;
+                //string str = "protocol=TCP,ipaddress="+ip+",port=4370,timeout=2000,passwd=";
                 Console.WriteLine(str);
                 if (IntPtr.Zero == h)
                 {
